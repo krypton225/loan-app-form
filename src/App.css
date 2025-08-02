@@ -19,6 +19,8 @@ body {
 .main {
     min-block-size: 100dvh;
 
+    padding-inline: 0.5rem;
+
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
