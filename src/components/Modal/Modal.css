@@ -1,0 +1,49 @@
+.c-modal {
+    inline-size: 100dvw;
+    block-size: 100dvh;
+
+    position: fixed;
+    inset-inline: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    will-change: transform;
+
+    background-color: #000000be;
+    color: #000000;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition:
+        visibility 0.35s ease-in-out,
+        opacity 0.35s ease-in-out;
+
+    &.is-show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .c-modal__content {
+        padding-block: 1rem;
+        padding-inline: 1rem;
+
+        border-radius: 0.25rem;
+
+        background-color: #ffffff;
+    }
+
+    .c-modal__text {
+        font-size: clamp(1rem, calc(1vw + 0.7rem), 1.2rem);
+
+        &.is-success {
+            color: #2e8b42;
+        }
+
+        &.is-danger {
+            color: #ff0000;
+        }
+    }
+}
