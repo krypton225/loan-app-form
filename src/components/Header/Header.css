@@ -1,0 +1,9 @@
+.c-header {
+    padding-block: 2rem;
+
+    text-align: center;
+
+    .c-header__title {
+        font-size: clamp(1.25rem, calc(2vw + 1rem), 2.25rem);
+    }
+}
