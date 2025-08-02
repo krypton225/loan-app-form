@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    
+    
+    background-color: #212121;
+    color: #ffffff;
+    
+    font-family: sans-serif;
+}
+
+.main {
+    min-block-size: 100dvh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
