@@ -1,0 +1,9 @@
+.c-footer {
+    padding-block: 1.5rem;
+
+    text-align: center;
+
+    .c-footer__desc {
+        font-size: clamp(0.75rem, calc(2vw + 0.75rem), 1rem);
+    }
+}
